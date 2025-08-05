@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro | MentoraBit</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    form {
+      max-width: 400px;
+      margin: 60px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 6px 12px rgba(190, 50, 130, 0.1);
+      text-align: left;
+    }
+
+    form h2 {
+      text-align: center;
+      color: #ab47bc;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 2px solid #f8bbd0;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(to right, #f06292, #ba68c8);
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      opacity: 0.95;
+    }
+
+    .voltar {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      color: #ab47bc;
+      text-decoration: none;
+    }
+
+    .voltar:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">💗 MentoraBit</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Sobre</a></li>
+        <li><a href="programas.html">Programas</a></li>
+        <li><a href="mentoras.html">Mentoras</a></li>
+        <li><a href="conteudos.html">Conteúdos</a></li>
+        <li><a href="comunidade.html">Comunidade</a></li>
+        <li><a href="cadastro.html" class="entrar">Cadastrar</a></li>
+        <li><a href="#" class="botao-roxo">Começar Agora</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <form action="cadastro.php" method="POST">
+    <h2>Crie sua conta</h2>
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" id="nome" required />
+
+    <label for="email">E-mail:</label>
+    <input type="email" name="email" id="email" required />
+
+    <label for="senha">Senha:</label>
+    <input type="password" name="senha" id="senha" required />
+
+    <button type="submit">Cadastrar</button>
+
+    <a href="index.html" class="voltar">← Voltar para a Home</a>
+  </form>
+</body>
+</html>

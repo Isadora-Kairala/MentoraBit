@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | MentoraBit</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    form {
+      max-width: 400px;
+      margin: 60px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 6px 12px rgba(190, 50, 130, 0.1);
+      text-align: left;
+    }
+
+    form h2 {
+      text-align: center;
+      color: #ab47bc;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 2px solid #f8bbd0;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(to right, #f06292, #ba68c8);
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .links {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .links a {
+      color: #ab47bc;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <form action="login.php" method="POST">
+    <h2>Entrar na Plataforma</h2>
+    <label for="email">E-mail:</label>
+    <input type="email" name="email" required />
+
+    <label for="senha">Senha:</label>
+    <input type="password" name="senha" required />
+
+    <button type="submit">Entrar</button>
+
+    <div class="links">
+      <p>Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
+      <p><a href="index.html">← Voltar para a Home</a></p>
+    </div>
+  </form>
+</body>
+</html>
